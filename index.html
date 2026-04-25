@@ -234,6 +234,38 @@ section{padding:6rem 5rem}
   font-size:0.72rem;padding:0.2rem 0.7rem;border-radius:2rem;
 }
 
+.residencias{background:var(--olive);color:var(--cream)}
+.residencias .section-label{color:rgba(245,240,232,0.5)}
+.residencias .section-title{color:var(--cream)}
+.residencias .section-body{color:rgba(245,240,232,0.7)}
+.residencias-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:3rem}
+.res-card{
+  background:rgba(255,255,255,0.08);border-radius:1.25rem;
+  padding:2rem;border:1px solid rgba(255,255,255,0.12);
+  transition:background 0.2s,border-color 0.2s;
+}
+.res-card:hover{background:rgba(255,255,255,0.13);border-color:rgba(196,136,58,0.4)}
+.res-card-icon{
+  width:48px;height:48px;border-radius:50%;
+  background:rgba(196,136,58,0.2);
+  display:flex;align-items:center;justify-content:center;
+  font-size:1.2rem;margin-bottom:1.2rem;
+}
+.res-card h4{
+  font-family:'Playfair Display',serif;
+  font-size:1.15rem;color:var(--cream);margin-bottom:0.6rem;
+}
+.res-card p{font-size:0.88rem;color:rgba(245,240,232,0.65);line-height:1.7}
+.residencias-quote{
+  margin-top:3rem;padding:2.5rem;
+  background:rgba(196,136,58,0.15);border-radius:1.25rem;
+  border-left:4px solid var(--gold);
+}
+.residencias-quote p{
+  font-family:'Playfair Display',serif;font-style:italic;
+  font-size:1.2rem;color:var(--cream);line-height:1.6;
+}
+
 .diferencial{background:#fff}
 .diff-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-top:3rem}
 .diff-list{display:flex;flex-direction:column;gap:1.5rem}
@@ -312,7 +344,7 @@ footer{
   .hero-left{padding:3rem 1.5rem}
   .hero-title{font-size:2.5rem}
   section{padding:4rem 1.5rem}
-  .por-que-grid,.propuestas-grid,.quienes-grid,.diff-grid{grid-template-columns:1fr}
+  .por-que-grid,.propuestas-grid,.quienes-grid,.diff-grid,.residencias-grid{grid-template-columns:1fr}
   .contacto-inner{grid-template-columns:1fr;padding:2rem}
   footer{flex-direction:column;gap:1rem;text-align:center;padding:2rem 1.5rem}
 }
@@ -325,6 +357,7 @@ footer{
   <div class="nav-links">
     <a href="#por-que">Por qué</a>
     <a href="#propuestas">Propuestas</a>
+    <a href="#residencias">Para residencias</a>
     <a href="#quienes">Quiénes somos</a>
     <a href="#contacto">Contacto</a>
   </div>
@@ -470,6 +503,47 @@ footer{
         <span class="tag">Antología</span>
       </div>
     </div>
+  </div>
+</section>
+
+<section class="residencias" id="residencias">
+  <div class="section-label">Para directivos</div>
+  <h2 class="section-title">¿Qué gana tu residencia?</h2>
+  <p class="section-body">Incorporar el Taller Literario es una decisión institucional con impacto real en la calidad de vida de los residentes y en la imagen de tu institución.</p>
+  <div class="residencias-grid">
+    <div class="res-card">
+      <div class="res-card-icon">🧠</div>
+      <h4>Estimulación cognitiva con respaldo pedagógico</h4>
+      <p>Nuestra propuesta está diseñada por docentes especializadas en Lengua y Literatura. No es entretenimiento: es una práctica pedagógica orientada a la activación de funciones cognitivas como la memoria, la atención y el razonamiento.</p>
+    </div>
+    <div class="res-card">
+      <div class="res-card-icon">📢</div>
+      <h4>Contenido de comunicación institucional</h4>
+      <p>Las producciones del taller — textos, antologías, intercambios — son material real para comunicar hacia afuera. Tu residencia puede mostrar que sus residentes crean, expresan y participan activamente.</p>
+    </div>
+    <div class="res-card">
+      <div class="res-card-icon">❤️</div>
+      <h4>Fortalecimiento del vínculo con las familias</h4>
+      <p>Especialmente en "El Viaje Literario", la antología colectiva que producen los residentes queda disponible para compartir con sus familias. Un puente tangible entre la residencia y el entorno afectivo de cada persona.</p>
+    </div>
+    <div class="res-card">
+      <div class="res-card-icon">🏅</div>
+      <h4>Diferenciación de su propuesta de valor</h4>
+      <p>En un mercado donde las residencias compiten por distinguirse, ofrecer talleres literarios con coordinación profesional es un diferencial concreto y comunicable hacia potenciales residentes y sus familias.</p>
+    </div>
+    <div class="res-card">
+      <div class="res-card-icon">🔧</div>
+      <h4>Adaptable a la dinámica de cada institución</h4>
+      <p>Tres modalidades de frecuencia, grupos reducidos, horarios flexibles. La propuesta se adapta a los tiempos y recursos de cada residencia, sin interferir en su funcionamiento habitual.</p>
+    </div>
+    <div class="res-card">
+      <div class="res-card-icon">🤲</div>
+      <h4>Sin carga operativa para el personal</h4>
+      <p>Llevamos todo lo necesario: materiales, bibliografía y coordinación. El equipo de la residencia no necesita preparar ni gestionar nada. Nosotras llegamos y nos hacemos cargo del espacio.</p>
+    </div>
+  </div>
+  <div class="residencias-quote">
+    <p>"Incorporar el Taller Literario suma a su residencia una propuesta de estimulación cognitiva con respaldo pedagógico, genera contenido de comunicación institucional y fortalece el vínculo entre los residentes y sus familias."</p>
   </div>
 </section>
 
